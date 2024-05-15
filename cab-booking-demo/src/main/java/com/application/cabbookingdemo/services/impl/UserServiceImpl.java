@@ -12,16 +12,11 @@ import com.application.cabbookingdemo.entity.User;
 import com.application.cabbookingdemo.repository.UserRepository;
 import com.application.cabbookingdemo.services.UserService;
 
-import jakarta.persistence.EntityManager;
-
 @Component
 public class UserServiceImpl implements UserService {
 	
 	@Autowired
 	private UserRepository userRepository;
-	
-	@Autowired
-	private EntityManager em;
 
 	@Override
 	public List<User> getAllUsers() {

@@ -1,11 +1,14 @@
 package com.application.cabbookingdemo.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 
 @Embeddable
 public class Vehicle {
 	
+	@Column(nullable = false)
 	private String vehicleName;
+	@Column(nullable = false)
 	private String vehicleNo;
 	
 	public Vehicle() {

@@ -2,7 +2,7 @@ package com.application.cabbookingdemo.converters;
 
 import com.application.cabbookingdemo.dtos.requests.UserRequestDTO;
 import com.application.cabbookingdemo.entity.User;
-import com.application.cabbookingdemo.exceptions.UserNameNotFoundException;
+import com.application.cabbookingdemo.exceptions.NameNotFoundException;
 
 public class UserConverter {
 	
@@ -13,7 +13,7 @@ public class UserConverter {
 
 			 return userResponse;
 		}
-		throw new UserNameNotFoundException("UserName is null/not found");
+		throw new NameNotFoundException("UserName is null/not found");
 	}
 	
 	/*
